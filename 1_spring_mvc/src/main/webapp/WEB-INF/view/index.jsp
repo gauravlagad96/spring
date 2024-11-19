@@ -1,6 +1,7 @@
-<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.List"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +27,7 @@
 	<h4>
 		NameList:
 		<%=namelist%></h4>
-		
-		<a href="login">Go to ModelAndView Example</a>
+
+	<a href="login">Go to ModelAndView Example</a>
 </body>
 </html>

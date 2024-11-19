@@ -1,4 +1,4 @@
-<%@page import="java.util.List"%>
+<%@ page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -10,14 +10,13 @@
 <body>
 
 	<h1>login page</h1>
-	<!-- <a href="/">Go to index page</a>          not work 
- -->
+	<!-- <a href="/">Go to index page</a>     not work  -->
 
 	<h1>This is example of ModelAndView</h1>
 	<%
 	String course = (String) request.getAttribute("course");
 	String class1 = (String) request.getAttribute("class1");
-	
+
 	List<String> fruitsName = (List<String>) request.getAttribute("fruitsName");
 	%>
 
@@ -31,7 +30,9 @@
 		class:
 		<%=class1%></h3>
 
-<h5>Fruit Names : <%=fruitsName %></h5>
+	<h5>
+		Fruit Names :
+		<%=fruitsName%></h5>
 
 </body>
 </html>
